@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "python-init-template"
+version = "0.1.0"
+description = ""
+authors = ["LDG <leesrock113@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+pylint = "^3.2.5"
+pytest-cov = "^5.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "--cov=src --cov-fail-under=80"
